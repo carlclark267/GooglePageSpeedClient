@@ -22,11 +22,11 @@ namespace HippoValidator.GooglePageSpeedClient
       }
     }
 
-    public int RuleImpact
+    public double RuleImpact
     {
       get
       {
-        return JsonClassHelper.ReadInteger(JsonClassHelper.GetJToken<JValue>(Jobject, "ruleImpact"));
+        return JsonClassHelper.ReadFloat(JsonClassHelper.GetJToken<JValue>(Jobject, "ruleImpact"));
       }
     }
 
